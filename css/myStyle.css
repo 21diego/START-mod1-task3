@@ -1,6 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 
+:root{
+	--verdeClaro: #8BEA23;
+	--azul: #3D4FFF;
+}
+
 * {
 	margin: 0 auto;
 	padding: 0;
@@ -65,11 +70,11 @@ header {
 .menu_link{
 	text-decoration: none;
 	font-size: 28px;
-	color: #8BEA23;
+	color: var(--verdeClaro);
 }
 
 ._select{
-	background: #8BEA23;
+	background: var(--verdeClaro);
 	font-weight: bold;
 	padding: 0px 35px;
 }
@@ -82,26 +87,67 @@ header {
 /**Estilos main**/
 
 main {
-	border: 2px solid #8BEA23;
+	border: 2px solid var(--verdeClaro);
 	margin:0 10%;
 	margin-bottom: 30px;
 }
 
 main h3 {
+	margin-top: 20px;
 	margin-left: 30px;
-	color: #8BEA23;
+	color: var(--verdeClaro);
 }
 
 main p {
 	margin-left: 60px;
 }
 
+main h2, main #aclaracion-reglas, main #aclaracion-schedule {
+	text-align: center;
+	margin: 0;
+}
+
+
 /**Estilo listas**/
 
 #contenedor-reglas {
-	border: red solid 2px;
-	margin-left: 30px;
-	margin-right: 30px;
+	margin: 30px;
 }
 
+#contenedor-reglas h3{
+	margin-left: 0;
+	color: var(--azul);
+}
+
+#contenedor-reglas span {
+	font-weight: bold;
+}
+
+ol, ul {
+	margin-left: 30px;
+}
+
+
 /**Estilo tablas**/
+#contenedor-tablas {
+	display: flex;
+	flex-direction: row;
+	margin-top: 30px;
+}
+
+.horarios {
+	width: 47%;
+	border: 2px solid var(--azul);
+}
+.horarios .cabeza{
+	border: 2px solid var(--verdeClaro);
+	background: var(--azul);
+}
+.horarios th {
+	text-align: left;
+}
+
+#escuelas {
+	margin-left: 30px;
+	width: 90%;
+}
