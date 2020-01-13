@@ -61,10 +61,15 @@ header {
 
 /**Estilos nav**/
 
+nav {
+	margin: 0 10%;
+}
+
 #menu {
 	list-style: none;
 	display: flex;
 	align-items: flex-start;
+	margin: 0;
 }
 
 .menu_link{
@@ -135,19 +140,51 @@ ol, ul {
 	margin-top: 30px;
 }
 
+.horarios th{
+	background: var(--azul);
+	text-align: left;
+	color: white;
+}
+
+.horarios td{
+	border-left: 1px grey solid;
+}
+.horarios .fecha td{
+	border-top: 1px grey solid;
+	border-collapse: collapse;
+}
+
 .horarios {
 	width: 47%;
 	border: 2px solid var(--azul);
+	border-collapse: collapse;
 }
-.horarios .cabeza{
-	border: 2px solid var(--verdeClaro);
-	background: var(--azul);
+
+.horarios tbody * {
+	padding-left: 5px;
 }
-.horarios th {
-	text-align: left;
-}
+
 
 #escuelas {
 	margin-left: 30px;
 	width: 90%;
+	margin-bottom: 30px;
+	border: 2px solid var(--verdeClaro);
+}
+
+#informacion {
+	width: 90%;
+	margin: 30px;
+}
+
+#informacion p {
+	margin-left: 5px;
+}
+
+#informacion .bold {
+	font-weight: bold;
+}
+
+.flex {
+	display: flex;
 }
